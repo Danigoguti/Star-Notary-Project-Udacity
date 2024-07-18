@@ -134,6 +134,8 @@ it('lookUptokenIdToStarInfo test', async () => {
     // 3. Verify if you Star name is the same
     let instance = await StarNotary.deployed();
 
+    let user1 = accounts[1];
+
     let starId = 14;
     await instance.createStar('test star 14', starId, { from: user1 });
 
